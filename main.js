@@ -4,26 +4,76 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap'
 }).addTo(map);
 
-// Universidades
+// Universidades (62)
 const universidades = [
-    {
-        nombre: "Universidad La Salle Cancún",
-        coords: [21.147, -86.823]
-    },
-    {
-        nombre: "Universidad Anáhuac Cancún",
-        coords: [21.060, -86.846]
-    },
-    {
-        nombre: "TecNM Campus Cancún",
-        coords: [21.148, -86.854]
-    }
+  { nombre: "UNIVERSIDAD LIDERMEX", coords: [21.158419, -86.852762] },
+  { nombre: "UNIVERSIDAD AZTLAN", coords: [21.13722, -86.85177] },
+  { nombre: "SISTEMA EDUCATIVO UNIVIR", coords: [21.157286, -86.822383] },
+  { nombre: "UNIVERSIDAD INTERAMERICANA PARA EL DESARROLLO", coords: [21.15758, -86.84763] },
+  { nombre: "INSTITUTO DE ESTUDIOS UNIVERSITARIOS PLANTEL CANCÚN", coords: [21.14073, -86.82266] },
+  { nombre: "COLEGIO DE COMUNICACION Y PERIODISMO", coords: [21.16412, -86.82904] },
+  { nombre: "UNIVERSIDAD DE ORIENTE - CANCÚN", coords: [21.0863, -86.84162] },
+  { nombre: "INSTITUTO HUMANISTA DE PSICOTERAPIA GESTALT-IHPG", coords: [21.1575, -86.82224] },
+  { nombre: "UNIVERSIDAD PEDAGÓGICA NACIONAL UNIDAD 231 CANCUN", coords: [21.166448, -86.828234] },
+  { nombre: "INSTITUTO PERICIAL JUDICIAL", coords: [21.169956, -86.835378] },
+  { nombre: "INSTITUTO TECNOLOGICO DE CANCUN", coords: [21.13922, -86.83387] },
+  { nombre: "INSTITUTO TECNOLOGICO DE LA CONSTRUCCION", coords: [21.16313, -86.84845] },
+  { nombre: "UNIVERSIDAD INTERNACIONAL DE INVESTIGACIÓN MÉXICO", coords: [21.114065, -86.844488] },
+  { nombre: "UNECT INSTITUTO VIRTUAL", coords: [21.12794, -86.838321] },
+  { nombre: "UNIVERSIDAD LA SALLE CANCUN", coords: [21.05262, -86.84643] },
+  { nombre: "FILMA CENTRO UNIVERSITARIO DE ARTES VISUALES Y ESCÉNICAS", coords: [21.113259, -86.8906] },
+  { nombre: "HENBORD", coords: [21.131965, -86.843876] },
+  { nombre: "UNIVERSIDAD PARA LA COOPERACION INTERNACIONAL MEXICO", coords: [21.10252, -86.97152] },
+  { nombre: "UNIVERSIDAD TECNOLOGICA DE CANCUN", coords: [21.05073, -86.84717] },
+  { nombre: "CENTRO REGIONAL DE EDUCACIÓN NORMAL JAVIER ROJO GÓMEZ", coords: [21.16256, -86.83698] },
+  { nombre: "ESCUELA SUPERIOR DE LEYES", coords: [21.14073, -86.82266] },
+  { nombre: "INSTITUTO PRIVADO DEL SUR DE MEXICO", coords: [21.15582, -86.86334] },
+  { nombre: "CENTRO PSICOTERAPIA COGNITIVA", coords: [21.12878, -86.84317] },
+  { nombre: "UNIVERSIDAD UNIMAAT", coords: [21.155678, -86.822461] },
+  { nombre: "INSTITUTO SOCRÁTICO AMERICANO", coords: [21.166623, -86.831972] },
+  { nombre: "TECNOLÓGICO UNIVERSITARIO CANCÚN", coords: [21.171741, -86.858597] },
+  { nombre: "UNISUR INTERNACIONAL", coords: [21.166816, -86.832003] },
+  { nombre: "INSTITUTO UNIVERSITARIO DE ALTA FORMACIÓN IUAF", coords: [21.147008, -86.792415] },
+  { nombre: "UNIVERSIDAD POLITECNICA DE QUINTANA ROO", coords: [21.18078, -86.90582] },
+  { nombre: "UNIVERSIDAD DEL SUR PLANTEL CANCUN", coords: [21.166084, -86.831166] },
+  { nombre: "UNIVERSIDAD AUTÓNOMA DEL ESTADO DE QUINTANA ROO CAMPUS CANCÚN", coords: [21.160329, -86.927592] },
+  { nombre: "CENTRO UNIVERSITARIO ZAZIL KAANBAL", coords: [21.164868, -86.853549] },
+  { nombre: "UNIVERSIDAD DEL CARIBE", coords: [21.20029, -86.82308] },
+  { nombre: "UNIVERSIDAD SANTANDER", coords: [21.1421, -86.8475] },
+  { nombre: "LICEO CULINARIO", coords: [21.16309, -86.834415] },
+  { nombre: "INSTITUTO UNIVERSITARIO DEL CENTRO DE MÉXICO CAMPUS CANCÚN", coords: [21.16706, -86.841309] },
+  { nombre: "CENTRO DE INVESTIGACIÓN PEDAGÓGICA DEL CARIBE", coords: [21.155678, -86.822461] },
+  { nombre: "CENTRO DE ESTUDIOS DE POSGRADO CAMPUS CANCÚN", coords: [21.149089, -86.85878] },
+  { nombre: "INSTITUTO UNIVERSITARIO CRUZ ROJA MEXICANA PLANTEL CANCUN", coords: [21.155692, -86.829918] },
+  { nombre: "INSTITUTO UNIVERSITARIO KUKULCAN", coords: [21.15742, -86.84569] },
+  { nombre: "UNIVERSIDAD ANÁHUAC", coords: [21.06215, -86.84365] },
+  { nombre: "UNIVERSIDAD DEL DESARROLLO PROFESIONAL", coords: [21.162875, -86.834237] },
+  { nombre: "CAMPO ESCUELA SAN JOSE", coords: [21.13576, -86.90389] },
+  { nombre: "INSTITUTO UNIVERSITARIO METROPOLITANO", coords: [21.182878, -86.83659] },
+  { nombre: "UNIVERSIDAD INTERAMERICANA PARA EL DESARROLLO CAMPUS CANCÚN", coords: [21.15758, -86.84763] },
+  { nombre: "IMESAD CAMPUS CANCÚN", coords: [21.166995, -86.825029] },
+  { nombre: "CENTRO DE EDUCACION CONTINUA UNIDAD CANCUN", coords: [21.10736, -86.76366] },
+  { nombre: "CICY UNIDAD CIENCIAS DEL AGUA", coords: [21.175042, -86.821002] },
+  { nombre: "UCIEP CONSORCIO EDUCATIVO", coords: [21.177714, -86.861923] },
+  { nombre: "ESCUELA BANCARIA Y COMERCIAL CAMPUS CANCÚN", coords: [21.127594, -86.838821] },
+  { nombre: "HUMANITAS ESCUELA DE ESTUDIOS SUPERIORES PLANTEL CANCÚN", coords: [21.130778, -86.848326] },
+  { nombre: "UNIVERSIDAD MAYA", coords: [21.140573, -86.836287] },
+  { nombre: "UNIVERSIDAD TEC MILENIO CANCUN", coords: [21.13304, -86.82647] },
+  { nombre: "INSTITUTO DE CIENCIAS POLÍTICAS Y OPINIÓN PÚBLICA", coords: [21.160552, -86.827889] },
+  { nombre: "UNIVERSIDAD LATINOAMERICANA DEL CARIBE", coords: [21.16579, -86.84256] },
+  { nombre: "UNIVERSIDAD LATINOAMERICANA DEL CARIBE (PLANTEL 2)", coords: [21.165998, -86.842992] },
+  { nombre: "ESCUELA DE COSMIATRIA MCC", coords: [21.180311, -86.815279] },
+  { nombre: "ESCUELA NORMAL SUPERIOR INCORPORADA ANDRES QUINTANA ROO", coords: [21.16521, -86.87232] },
+  { nombre: "UNIVERSIDAD UNITECH", coords: [21.17905, -86.816836] },
+  { nombre: "UNIVERSIDAD AMERICANA DE EUROPA", coords: [21.14642, -86.82204] },
+  { nombre: "ESCUELA NORMAL SUPERIOR ELVIA CARRILLO PUERTO", coords: [21.15943, -86.870076] },
+  { nombre: "CENTRO DE ESTUDIOS SUPERIORES DELLSER", coords: [21.152082, -86.826737] }
 ];
 
 universidades.forEach(u => {
-    L.marker(u.coords)
-        .addTo(map)
-        .bindPopup(`<b>${u.nombre}</b>`);
+  L.marker(u.coords)
+    .addTo(map)
+    .bindPopup(`<b>${u.nombre}</b>`);
 });
 
-console.log("Mapa cargado correctamente");
+console.log("Mapa cargado con 62 universidades");

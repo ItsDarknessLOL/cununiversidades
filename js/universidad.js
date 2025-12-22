@@ -9,12 +9,24 @@ fetch("../data/universidades.json")
   });
 
 function render(u){
-  document.getElementById("nombre").textContent = u.nombre;
-  document.getElementById("descripcion").textContent = u.descripcion;
-  document.getElementById("direccion").textContent = u.direccion;
-  document.getElementById("telefono").textContent = u.telefono;
-  document.getElementById("tipo").textContent = u.tipo;
-  document.getElementById("coords").textContent = u.coords;
+document.getElementById("nombre").textContent =
+  u["Nombre del centro de trabajo"] || "No disponible";
+
+document.getElementById("tipo").textContent =
+  u["Nombre del control (Público o Privado)"] || "No disponible";
+
+document.getElementById("direccion").textContent =
+  u.Domicilio || "No disponible";
+
+document.getElementById("telefono").textContent =
+  u.Telefono || "No disponible"; // si no existe, mostrará "No disponible"
+
+document.getElementById("descripcion").textContent =
+  `${u["Tipo educativo"]} - ${u["Nivel educativo"]} (${u["Servicio educativo"]})`;
+
+document.getElementById("coords").textContent =
+  `${u.y}, ${u.x}`;
+
 
   const cont = document.getElementById("imagenes");
   u.imagenes.forEach(img => {
@@ -26,3 +38,4 @@ function render(u){
     cont.appendChild(i);
   });
 }
+

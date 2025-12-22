@@ -13,6 +13,8 @@ function render(u){
   document.getElementById("descripcion").textContent = u.descripcion;
   document.getElementById("direccion").textContent = u.direccion;
   document.getElementById("telefono").textContent = u.telefono;
+  document.getElementById("tipo").textContent = u.tipo;
+  document.getElementById("coords").textContent = u.coords;
 
   const cont = document.getElementById("imagenes");
   u.imagenes.forEach(img => {

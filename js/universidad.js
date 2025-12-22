@@ -1,40 +1,59 @@
 const params = new URLSearchParams(window.location.search);
-const id = params.get("id");
+const id = Number(params.get("id")); // 🔥 convertir a number
 
 fetch("../data/universidades.json")
   .then(res => res.json())
   .then(data => {
-    // id del JSON es número, el de la URL es string
-    const uni = data.find(u => String(u.id) === id);
-    if (uni) {
-      render(uni);
-    } else {
-      console.error("Universidad no encontrada con id:", id);
-    }
-  })
-  .catch(err => console.error("Error cargando JSON:", err));
+    const uni = data.find(u => u.id === id);
+    if (uni) render(uni);
+    else console.error("Universidad no encontrada");
+  });
 
-function set(id, value){
-  const el = document.getElementById(id);
-  if (el) el.textContent = value ?? "No disponible";
-}
+function render(u) {
 
-function render(u){
-  // DATOS
-  set("nombre", u["Nombre del centro de trabajo"]);
-  set("tipo", u["Nombre del control (Público o Privado)"]);
-  set("direccion", u.Domicilio);
-  set("telefono", u.Telefono);
-  set(
-    "descripcion",
-    `${u["Tipo educativo"]} - ${u["Nivel educativo"]} (${u["Servicio educativo"]})`
-  );
-  set("coords", `${u.y}, ${u.x}`);
+  const nombre =
+    u.nombre ||
+    u["Nombre del centro de trabajo"] ||
+    "No disponible";
 
-  // IMÁGENES (opcional)
+  const tipo =
+    u.tipo ||
+    u["Nombre del control (Público o Privado)"] ||
+    "No disponible";
+
+  const direccion =
+    u.direccion ||
+    u.Domicilio ||
+    "No disponible";
+
+  const telefono =
+    u.telefono ||
+    u.Telefono ||
+    "No disponible";
+
+  const descripcion =
+    u.descripcion ||
+    (u["Tipo educativo"]
+      ? `${u["Tipo educativo"]} - ${u["Nivel educativo"]} (${u["Servicio educativo"]})`
+      : "Información pendiente");
+
+  const lat = u.coords ? u.coords[0] : u.y;
+  const lng = u.coords ? u.coords[1] : u.x;
+
+  document.getElementById("titulo-universidad").textContent = nombre;
+  document.getElementById("nombre").textContent = nombre;
+  document.getElementById("tipo").textContent = tipo;
+  document.getElementById("direccion").textContent = direccion;
+  document.getElementById("telefono").textContent = telefono;
+  document.getElementById("descripcion").textContent = descripcion;
+  document.getElementById("coords").textContent =
+    lat && lng ? `${lat}, ${lng}` : "No disponible";
+
+  // IMÁGENES (solo si existen)
   const cont = document.getElementById("imagenes");
+  cont.innerHTML = "";
 
-  if (u.imagenes && Array.isArray(u.imagenes)) {
+  if (Array.isArray(u.imagenes)) {
     u.imagenes.forEach(img => {
       const i = document.createElement("img");
       i.src = `../img/universidades/${u.id}/${img}`;

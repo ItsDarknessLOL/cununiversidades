@@ -20,17 +20,17 @@ function render(u) {
   document.getElementById("turno").textContent = u.turno || "No disponible";
   document.getElementById("tipo").textContent = u.tipo || "No disponible";
   document.getElementById("tipoeducativo").textContent = u.tipoeducativo || "No disponible";
-  document.getElementById("niveleducativo").textContent = u["nivel educativo"] || "No disponible";
-  document.getElementById("servicioeducativo").textContent = u["servicio educativo"] || "No disponible";
+  document.getElementById("niveleducativo").textContent = u.niveleducativo["nivel educativo"] || "No disponible";
+  document.getElementById("servicioeducativo").textContent = u.servicioeducativo["servicio educativo"] || "No disponible";
   document.getElementById("sostenimiento").textContent = u.sostenimiento || "No disponible";
-  document.getElementById("Nombredelaentidad").textContent = u["Nombre de la entidad"] || "No disponible";
-  document.getElementById("Nombredelmunicipio").textContent = u["Nombre del municipio o delegación"] || "No disponible";
-  document.getElementById("Nombredelocalidad").textContent = u["Nombre de localidad"] || "No disponible";
+  document.getElementById("Nombredelaentidad").textContent = u.Nombredelaentidad["Nombre de la entidad"] || "No disponible";
+  document.getElementById("Nombredelmunicipio").textContent = u.Nombredelmunicipio["Nombre del municipio o delegación"] || "No disponible";
+  document.getElementById("Nombredelocalidad").textContent = u.Nombredelocalidad["Nombre de localidad"] || "No disponible";
   document.getElementById("direccion").textContent = u.direccion || "No disponible";
-  document.getElementById("coords").textContent = u.telefono || "No disponible";
+  
 
   document.getElementById("descripcion").textContent =
-    `${u["tipo educativo"]} - ${u["nivel educativo"]} (${u["servicio educativo"]})`;
+    `${u["tipoeducativo"]} - ${u["niveleducativo"]} (${u["servicioeducativo"]})`;
 
   document.getElementById("coords").textContent =
     lat && lng ? `${lat}, ${lng}` : "No disponible";

@@ -20,7 +20,7 @@ function render(u) {
   document.getElementById("turno").textContent = u.turno || "No disponible";
   document.getElementById("tipo").textContent = u.tipo || "No disponible";
   document.getElementById("tipoeducativo").textContent = u.tipoeducativo || "No disponible";
-  document.getElementById("niveleducativo").textContent = u.niveleducativo["nivel educativo"] || "No disponible";
+  document.getElementById("niveleducativo").textContent = u.niveleducativo["niveleducativo"] || "No disponible";
   document.getElementById("servicioeducativo").textContent = u.servicioeducativo["servicio educativo"] || "No disponible";
   document.getElementById("sostenimiento").textContent = u.sostenimiento || "No disponible";
   document.getElementById("Nombredelaentidad").textContent = u.Nombredelaentidad["Nombre de la entidad"] || "No disponible";
@@ -50,3 +50,4 @@ function render(u) {
     });
   }
 }
+

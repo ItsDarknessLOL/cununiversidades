@@ -10,7 +10,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE ROSAS, CALLE YAXCHILAN, CALLE ROSAS, CALLE ROSAS, 295, 77500",
     "coords": [
@@ -29,7 +29,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 295, 77560",
     "coords": [
@@ -48,7 +48,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE ROBALO, CALLE JUREL, CALLE ROBALO, CERRADA ROBALO, 295, 77500",
     "coords": [
@@ -67,7 +67,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE SIERRA, AVENIDA BONAMPAK, AVENIDA COBA, CALLE RÓBALO, 4, 77500",
     "coords": [
@@ -86,7 +86,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA MAYAPAN, CALLE 16 DE ABRIL, AVENIDA SAYIL, CALLE NINGUNO, 295, 77500",
     "coords": [
@@ -105,7 +105,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA CHICHÉN ITZÁ, CALLE TIMUL, CALLE NOH CACAB, CALLE TIZUMUL, 63, 77515",
     "coords": [
@@ -124,7 +124,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA LA LUNA, CALLE CHITAL, CALLE EK BALAM, AVENIDA NICHUPTE, 295, 77533",
     "coords": [
@@ -143,7 +143,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA RODRIGO GOMEZ ANTES KABAH, CALLE IZAMAL NORTE, AVENIDA CHICHEN ITZA, CALLE CEIBA, 295, 77507",
     "coords": [
@@ -162,7 +162,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA JOSE LOPEZ PORTILLO, CALLE 33 NORTE, CALLE 35 NORTE, CALLE 16, 73, 77510",
     "coords": [
@@ -181,7 +181,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA JOSE LOPEZ PORTILLO, CALLE 81 N, CALLE 77 N, CALLE NINGUNO, 295, 77514",
     "coords": [
@@ -200,7 +200,7 @@
     "tipo": "publica",
     "sostenimiento": "FEDERAL",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA RODRIGO GOMEZ (KABAH), AVENIDA NICHUPTE, CALLE NINGUNO, CALLE MAR CASPIO, 295, 77504",
     "coords": [
@@ -219,7 +219,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA CUMBRES, AVENIDA HUAYACAN, BOULEVARD LUIS DONALDO COLOSIO, AVENIDA ÁLAMOS, 240, 77500",
     "coords": [
@@ -238,7 +238,7 @@
     "tipo": "publica",
     "sostenimiento": "FEDERAL TRANSFERIDO",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE FLAMBOYAN, CALLE CIRICOTE, CALLE 5, CALLE LAUREL, 239, 77500",
     "coords": [
@@ -257,7 +257,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE CARRETERA CHETUMAL-CANCUN KILOMETRO 344, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 295, 77565",
     "coords": [
@@ -276,7 +276,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA LAS TORRES, AVENIDA CANCÚN, AVENIDA FONATUR, AVENIDA HUAYACAN, 200, 77535",
     "coords": [
@@ -295,7 +295,7 @@
     "tipo": "publica",
     "sostenimiento": "ESTATAL",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE CARRETERA CANCUN-AEROPUERTO KILOMETRO 11, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 295, 77500",
     "coords": [
@@ -314,7 +314,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA JOSE LOPEZ PORTILLO, CALLE HOLPECHEN, CALLE YOBAIN, CALLE YAXCHE, 295, 77515",
     "coords": [
@@ -333,7 +333,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "PROLONGACIÓN BONAMPAK, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 295, 77503",
     "coords": [
@@ -352,7 +352,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE FRESNO, AVENIDA HUAYACAN, CALLE LIMON, CALLE ENCINO, 295, 77560",
     "coords": [
@@ -371,7 +371,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE CARRETERA MERIDA-PUERTO JUAREZ MANZANA 4, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 295, 77539",
     "coords": [
@@ -390,7 +390,7 @@
     "tipo": "publica",
     "sostenimiento": "FEDERAL TRANSFERIDO",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CIRCUITO CORAL, CIRCUITO CORAL, CIRCUITO CORAL, CALLE NINGUNO, 31, 77508",
     "coords": [
@@ -409,7 +409,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE MODROÑO, AVENIDA PASEO DEL CASTAÑO, AVENIDA PASEO DEL MAULE, CALLE PASEO DEL FRESNO, 295, 77560",
     "coords": [
@@ -428,7 +428,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA VILLA MALLORCA, AVENIDA VILLA MAYA, AVENIDA 135, CALLE NINGUNO, 301, 77500",
     "coords": [
@@ -447,7 +447,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "BOULEVARD KUKULKAN, CALLE NINGUNO, CALLE KUKULKÁN, CALLE NINGUNO, 209, 77500",
     "coords": [
@@ -466,7 +466,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA NICHUPTÉ, AVENIDA MÉXICO, AVENIDA CHAC MOOL, AVENIDA INSTITUTO POLITÉCNICO NACIONAL, 187, 77534",
     "coords": [
@@ -485,7 +485,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA UXMAL, CALLE PUNTA IXCABAL, CALLE PUNTA XACABAL, CALLE CHACCHIC, 28, 77509",
     "coords": [
@@ -504,7 +504,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA UXMAL, CALLE ROBLE, AVENIDA CHICHÉN ITZÁ, CALLE CEIBO, 240, 77500",
     "coords": [
@@ -523,7 +523,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA COBA, AVENIDA BONAMPAK, CALLE NUBE, CALLE NUBE, 5, 77500",
     "coords": [
@@ -542,7 +542,7 @@
     "tipo": "publica",
     "sostenimiento": "ESTATAL",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA TULUM, AVENIDA UXMAL, AVENIDA PALENQUE, CALLE NINGUNO, 295, 77500",
     "coords": [
@@ -561,7 +561,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA UXMAL, CALLE PULTICUB, CALLE PUNTA PULTICUB, CALLE NINGUNO, 295, 77509",
     "coords": [
@@ -580,7 +580,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA KABÁH, CALLE TABASCO, CALLE 64, CALLE 89, 356, 77516",
     "coords": [
@@ -599,7 +599,7 @@
     "tipo": "publica",
     "sostenimiento": "ESTATAL",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 295, 77528",
     "coords": [
@@ -618,7 +618,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA JOSE LOPEZ PORTILLO, CALLE 57, CALLE LOMBARDO TOLEDANO, CALLE 16 PONIENTE, 240, 77500",
     "coords": [
@@ -637,7 +637,7 @@
     "tipo": "publica",
     "sostenimiento": "AUTÓNOMO",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA CHETUMAL, AVENIDA TULIPAN, CALLE LIGIA ARCEO BARBOZA, AVENIDA FLOR DE MAYO, 295, 77518",
     "coords": [
@@ -656,7 +656,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE 28, AVENIDA KABÁH, CALLE 89, AVENIDA FRANCISCO I. MADERO, 89, 77516",
     "coords": [
@@ -675,7 +675,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA XEL-HA, AVENIDA XEL-HA, AVENIDA TANKA, AVENIDA XEL-HA, 32, 77509",
     "coords": [
@@ -694,7 +694,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "BOULEVARD LUIS DONALDO COLOSIO, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 160, 77560",
     "coords": [
@@ -713,7 +713,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA LA LUNA, AVENIDA NICHUPTÉ, AVENIDA KOHUNLICH, CALLE HALACHO, 54, 77533",
     "coords": [
@@ -732,7 +732,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA XELHA, AVENIDA XELHA, AVENIDA XELHA, AVENIDA XELHA, 295, 77509",
     "coords": [
@@ -751,7 +751,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE CARRETERA FEDERAL LIBRE 307 TRAMO MERIDA, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 295, 77560",
     "coords": [
@@ -770,7 +770,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE CAYO CENTRO, AVENIDA CABO CATOCHE, CALLE PUNTA NOH-KU, CALLE NINGUNO, 295, 77508",
     "coords": [
@@ -789,7 +789,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "BOULEVARD CANCUN-AEROPUERTO KILOMETRO 7.5, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 295, 77565",
     "coords": [
@@ -808,7 +808,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 295, 77560",
     "coords": [
@@ -827,7 +827,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA COMALCALCO, CALLE TONINA, CALLE MAYAPAN, CALLE OAXACTUN, 94, 77530",
     "coords": [
@@ -846,7 +846,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA RODRIGO GOMEZ ANTES KABAH, CALLE IZAMAL NORTE, AVENIDA CHICHEN ITZA, CALLE CEIBA, 295, 77507",
     "coords": [
@@ -865,7 +865,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA YAXCHILAN, AVENIDA XCARET, AVENIDA LABNA, AVENIDA XCARET, 25, 77505",
     "coords": [
@@ -884,7 +884,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE 64, CALLE 19 NORTE, AVENIDA RANCHO VIEJO, CALLE 62, 137, 77510",
     "coords": [
@@ -903,7 +903,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA COBA, AVENIDA BONAMPAK, CALLE NUBE, CALLE NUBE, 5, 77500",
     "coords": [
@@ -922,7 +922,7 @@
     "tipo": "publica",
     "sostenimiento": "FEDERAL",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE 8, CALLE 21, CALLE 23, CALLE 2, 68, 77524",
     "coords": [
@@ -941,7 +941,7 @@
     "tipo": "publica",
     "sostenimiento": "FEDERAL",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "BOULEVARD BAHIAKUKULCAN KILOMETRO 12.5, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 295, 77500",
     "coords": [
@@ -960,7 +960,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE GLADIOLAS, CALLE 5 ALCATRACES, CALLE GLADIOLAS, AVENIDA YAXCHILÁN, 240, 77500",
     "coords": [
@@ -979,7 +979,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA JOSE LOPEZ PORTILLO, CALLE 67, CALLE 53, CALLE 12 PONIENTE, 65, 77514",
     "coords": [
@@ -998,7 +998,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA FONATUR, CALLE ALMENDROS, CALLE ALACRANES, CALLE MAPLE, 167, 77533",
     "coords": [
@@ -1017,7 +1017,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA KABÁH, CALLE 88, CALLE 90, CALLE 89, 134, 77516",
     "coords": [
@@ -1036,7 +1036,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE FRESNO, CALLE ENCINO, CALLE GUAYACAN, CALLE NARANJO, 167, 77533",
     "coords": [
@@ -1055,7 +1055,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA BONAMPAK, CALLE NINGUNO, CALLE NINGUNO, CALLE NINGUNO, 295, 77528",
     "coords": [
@@ -1074,7 +1074,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA RODRIGO GÓMEZ, CALLE 56, AVENIDA NICHUPTÉ, AVENIDA LA LUNA, 55, 77533",
     "coords": [
@@ -1093,7 +1093,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA TULÚM, AVENIDA JOSÉ GARCÍA DE LA TORRE, AVENIDA UXMAL, AVENIDA CARLOS J. NADER, 295, 77535",
     "coords": [
@@ -1112,7 +1112,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA JOSE LOPEZ PORTILLO, CALLE JOSE MARIA MORELOS, CALLE NINGUNO, PRIVADA IGNACIO ALLENDE, 68, 77524",
     "coords": [
@@ -1131,7 +1131,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA BONAMPAK, AVENIDA NICHUPTE, CALLE SAYIL, CALLE SAYIL, 295, 77500",
     "coords": [
@@ -1150,7 +1150,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE GACELA, CALLE ALCE, CALLE GACELA, CALLE LABNA, 240, 77500",
     "coords": [
@@ -1169,7 +1169,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA JOSE LOPEZ PORTILLO, CALLE 67, CALLE 53, CALLE 12 PONIENTE, 295, 77520",
     "coords": [
@@ -1188,7 +1188,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE CHAC MOOL, AVENIDA LEONA VICARIO, CALLE 62, CALLE 31, 124, 77517",
     "coords": [
@@ -1207,7 +1207,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "CALLE UNION DONCELES, CALLE ARTICULO 123, CALLE LOMBARDO TOLEDANO, CALLE LOMBARDO TOLEDANO, 278, 77526",
     "coords": [
@@ -1226,7 +1226,7 @@
     "tipo": "privada",
     "sostenimiento": "privada",
     "Nombredelaentidad": "QUINTANA ROO",
-    "Nombredelmunicipioodelegación": "BENITO JUÁREZ",
+    "Nombredelmunicipio": "BENITO JUÁREZ",
     "Nombredelocalidad": "CANCÚN",
     "direccion": "AVENIDA MIGUEL HIDALGO, CALLE 115, CALLE 117, CALLE 36, 97, 77518",
     "coords": [

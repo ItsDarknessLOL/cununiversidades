@@ -15,14 +15,14 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px; /* espacio entre icono y texto */
+  gap: 20px; /* espacio entre icono y texto */
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.2 rem;
 }
 
 .logo-icon {
-  width: 32px;   /* tamaño del icono */
-  height: 32px;
+  width: 80px;   /* tamaño del icono */
+  height: 80px;
   object-fit: contain;
 }
 
@@ -32,6 +32,7 @@ body{
 }
 
 .navbar{
+  height: 60px;
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -473,5 +474,4 @@ body.fade-out {
 .page-transition.active {
   clip-path: circle(150% at center);
 }
-
 

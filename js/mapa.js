@@ -157,4 +157,16 @@ document.addEventListener("click", e => {
 });
 
 // 6️⃣ Filtro por tipo
-const tipo = d
+const tipo = document.getElementById("tipo");
+if(tipo){
+  tipo.addEventListener("change", () => {
+    const t = tipo.value;
+
+    markers.forEach(m => {
+      (!t || m.tipo === t)
+        ? map.addLayer(m.marker)
+        : map.removeLayer(m.marker);
+    });
+  });
+}
+

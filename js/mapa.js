@@ -22,21 +22,27 @@ function initMap(universidades){
     const marker = L.marker(u.coords)
       .addTo(map)
       .bindPopup(`
-       <b>${u.nombre}</b><br>
-       <a href="universidades/universidad.html?id=${u.id}">
-       Ver información
-       </a>
-    `);
+        <b>${u.nombre}</b><br>
+        <a href="universidades/universidad.html?id=${u.id}">
+          Ver información
+        </a>
+      `);
 
     markers.push({
-     marker,
-     nombre: u.nombre.toLowerCase(),
-     nombreOriginal: u.nombre,
-     tipo: u.tipo.toLowerCase()
+      id: u.id,
+      marker,
+      nombre: u.nombre.toLowerCase(),
+      tipo: u.tipo.toLowerCase()
     });
 
+    // 🔥 Si viene desde "Ver en mapa"
+    if (focusId && Number(focusId) === u.id) {
+      map.setView(u.coords, 17);
+      setTimeout(() => marker.openPopup(), 400);
+    }
   });
 }
+
 
 // 5️⃣ Buscador (seguro)
 const search = document.getElementById("search");
@@ -101,3 +107,9 @@ if(tipo){
     });
   });
 }
+
+const params = new URLSearchParams(window.location.search);
+const focusLat = params.get("lat");
+const focusLng = params.get("lng");
+const focusId = params.get("id");
+

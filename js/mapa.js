@@ -33,7 +33,7 @@ let markers = [];
 const cluster = L.markerClusterGroup({
   showCoverageOnHover: false,
   spiderfyOnMaxZoom: true,
-  maxClusterRadius: 10
+  maxClusterRadius: 5
 });
 
 const catalogo = document.getElementById("catalogo");
@@ -178,5 +178,6 @@ if(tipo){
     });
   });
 }
+
 
 

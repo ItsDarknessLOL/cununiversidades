@@ -30,6 +30,12 @@ if ("geolocation" in navigator) {
 
 // 📦 Variables globales
 let markers = [];
+const cluster = L.markerClusterGroup({
+  showCoverageOnHover: false,
+  spiderfyOnMaxZoom: true,
+  maxClusterRadius: 50
+});
+
 const catalogo = document.getElementById("catalogo");
 
 // 3️⃣ Cargar universidades
@@ -43,20 +49,21 @@ function initMap(universidades) {
   universidades.forEach(u => {
     if (!u.coords) return;
 
-    const marker = L.marker(u.coords)
-      .addTo(map)
-      .bindPopup(`
-        <b>${u.nombre}</b><br>
-        <a href="universidades/universidad.html?id=${u.id}">
-          Ver información
-        </a><br>
-        <a 
-          href="https://www.google.com/maps/dir/?api=1&destination=${u.coords[0]},${u.coords[1]}"
-          target="_blank"
-        >
-          Cómo llegar
-        </a>
-      `);
+    const marker = L.marker(u.coords).bindPopup(`
+      <b>${u.nombre}</b><br>
+     <a href="universidades/universidad.html?id=${u.id}">
+        Ver información
+      </a><br>
+      <a 
+        target="_blank"
+       href="https://www.google.com/maps/dir/?api=1&destination=${u.coords[0]},${u.coords[1]}"
+      >
+       Cómo llegar
+      </a>
+    `);
+
+    cluster.addLayer(marker);
+
 
     markers.push({
       id: u.id,
@@ -105,6 +112,8 @@ function initMap(universidades) {
       `;
 
       catalogo.appendChild(card);
+      map.addLayer(cluster);
+
     }
   });
 }
@@ -169,4 +178,3 @@ if(tipo){
     });
   });
 }
-

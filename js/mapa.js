@@ -6,6 +6,35 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "© OpenStreetMap contributors"
 }).addTo(map);
 
+// 📍 Geolocalización del usuario
+if ("geolocation" in navigator) {
+  navigator.geolocation.getCurrentPosition(
+    pos => {
+      const userCoords = [
+        pos.coords.latitude,
+        pos.coords.longitude
+      ];
+
+      L.marker(userCoords, {
+        icon: L.icon({
+          iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
+          iconSize: [25, 41],
+          iconAnchor: [12, 41]
+        })
+      })
+        .addTo(map)
+        .bindPopup("Tu ubicación")
+        .openPopup();
+
+      map.setView(userCoords, 13);
+    },
+    () => {
+      console.warn("Geolocalización denegada");
+    }
+  );
+}
+
+
 // 3️⃣ Cargar datos
 fetch("data/universidades.json")
   .then(res => res.json())
@@ -13,6 +42,9 @@ fetch("data/universidades.json")
   .catch(err => console.error("Error cargando universidades:", err));
 
 let markers = [];
+
+const catalogo = document.getElementById("catalogo");
+
 
 // 4️⃣ Crear marcadores
 function initMap(universidades){
@@ -22,11 +54,18 @@ function initMap(universidades){
     const marker = L.marker(u.coords)
       .addTo(map)
       .bindPopup(`
-        <b>${u.nombre}</b><br>
-        <a href="universidades/universidad.html?id=${u.id}">
-          Ver información
+       <b>${u.nombre}</b><br>
+       <a href="universidades/universidad.html?id=${u.id}">
+         Ver información
+       </a><br>
+       <a 
+         href="https://www.google.com/maps/dir/?api=1&destination=${u.coords[0]},${u.coords[1]}"
+         target="_blank"
+       >  
+         Cómo llegar
         </a>
-      `);
+      `)
+
 
     markers.push({
       id: u.id,
@@ -41,6 +80,39 @@ function initMap(universidades){
       setTimeout(() => marker.openPopup(), 400);
     }
   });
+  if (catalogo) {
+    const card = document.createElement("div");
+   card.className = "uni-card";
+
+    card.innerHTML = `
+      <img src="img/universidades/${u.id}/1.jpg" onerror="this.src='img/placeholder.jpg'">
+
+     <div class="uni-card-content">
+        <h4>${u.nombre}</h4>
+        <p>${u.direccion || "Cancún, Q. Roo"}</p>
+
+        <div class="actions">
+         <a 
+          class="mapa"
+          href="mapa.html?lat=${u.coords[0]}&lng=${u.coords[1]}&id=${u.id}"
+        >
+          Ver mapa
+        </a>
+
+        <a
+          class="llegar"
+          target="_blank"
+          href="https://www.google.com/maps/dir/?api=1&destination=${u.coords[0]},${u.coords[1]}"
+        >
+          Cómo llegar
+        </a>
+      </div>
+    </div>
+  `;
+
+  catalogo.appendChild(card);
+}
+
 }
 
 

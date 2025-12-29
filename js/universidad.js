@@ -24,7 +24,7 @@ function render(u) {
   document.getElementById("servicioeducativo").textContent = u.servicioeducativo || "No disponible";
   document.getElementById("sostenimiento").textContent = u.sostenimiento || "No disponible";
   document.getElementById("Nombredelaentidad").textContent = u.Nombredelaentidad || "No disponible";
-  document.getElementById("Nombredelmunicipio").textContent = u.Nombredelmunicipio || "No disponible";
+  document.getElementById("Nombredelmunicipio").textContent = u.Nombredelmunicipio["Nombre del municipio o delegación"] || "No disponible";
   document.getElementById("Nombredelocalidad").textContent = u.Nombredelocalidad || "No disponible";
   document.getElementById("direccion").textContent = u.direccion || "No disponible";
   
@@ -49,7 +49,12 @@ function render(u) {
       cont.appendChild(i);
     });
   }
+
+  const btnMapa = document.getElementById("ver-mapa");
+
+  if (btnMapa && u.coords) {
+    btnMapa.href =
+     `../mapa.html?lat=${u.coords[0]}&lng=${u.coords[1]}&id=${u.id}`;
+  }
+
 }
-
-
-

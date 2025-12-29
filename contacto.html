@@ -30,15 +30,18 @@
       ¿Tienes sugerencias o encontraste algún error? Escríbenos.
     </p>
 
-    <form style="max-width:500px;margin:auto;display:grid;gap:15px">
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea rows="5" placeholder="Mensaje" required></textarea>
+    <form id="contactForm" style="max-width:500px;margin:auto;display:grid;gap:15px">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
 
       <button class="btn-primary" type="submit">
-        Enviar mensaje
+       Enviar mensaje
       </button>
+
+      <p id="status" style="text-align:center;font-weight:600"></p>
     </form>
+
   </section>
 </main>
 
@@ -47,5 +50,15 @@
 </footer>
 
 <script src="js/app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("C3sy5NWKT2n0FNEjy");
+  })();
+</script>
+
+<script src="js/contacto.js"></script>
+
 </body>
 </html>

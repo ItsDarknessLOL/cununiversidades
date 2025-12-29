@@ -185,6 +185,7 @@ footer{
   height:450px;
   border-radius:18px;
   box-shadow:0 10px 20px rgba(0,0,0,.1);
+  margin-bottom: 40px;
 }
 
 @media (max-width:768px){
@@ -241,6 +242,17 @@ footer{
   outline: none;
 }
 
+#tipo {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background: white;
+}
+
+
 #search:focus {
   border-color: var(--primary);
   box-shadow: 0 0 0 3px rgba(13,110,253,.15);
@@ -255,6 +267,9 @@ footer{
   overflow: hidden;
   margin-top: 6px;
   z-index: 1200; /* 🔥 sobre el mapa */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Cada sugerencia */
@@ -272,7 +287,8 @@ footer{
 .suggestion::after {
   content: "📍";
   float: right;
-  opacity: .6;
+  opacity: .4;
+  font-size: 1.2rem;
 }
 
 /* Ocultar cuando esté vacío */
@@ -373,10 +389,33 @@ footer{
   color: var(--primary);
 }
 
+.uni-card .mapa:hover {
+  background: #0b5ed7;
+}
+
+.uni-card .llegar:hover {
+  background: var(--primary);
+  color: white;
+}
+
+
+
 /* 📱 móvil */
 @media (max-width:768px){
   .uni-card img {
     height: 140px;
   }
 }
+
+@media (max-width:768px){
+  .uni-card .actions a {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 

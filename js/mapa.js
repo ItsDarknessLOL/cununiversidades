@@ -1,310 +1,115 @@
-:root{
-  --primary:#0d6efd;
-  --secondary:#00b4d8;
-  --dark:#1f2937;
-  --light:#f8fafc;
+// 1️⃣ Crear mapa centrado en Cancún
+const map = L.map("map").setView([21.1619, -86.8515], 12);
+
+// 2️⃣ Capa base (OBLIGATORIA)
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "© OpenStreetMap contributors"
+}).addTo(map);
+
+// 3️⃣ Cargar datos
+fetch("data/universidades.json")
+  .then(res => res.json())
+  .then(data => initMap(data))
+  .catch(err => console.error("Error cargando universidades:", err));
+
+let markers = [];
+
+// 4️⃣ Crear marcadores
+function initMap(universidades){
+  universidades.forEach(u => {
+    if(!u.coords) return;
+
+    const marker = L.marker(u.coords)
+      .addTo(map)
+      .bindPopup(`
+        <b>${u.nombre}</b><br>
+        <a href="universidades/universidad.html?id=${u.id}">
+          Ver información
+        </a>
+      `);
+
+    markers.push({
+      id: u.id,
+      marker,
+      nombre: u.nombre.toLowerCase(),
+      tipo: u.tipo.toLowerCase()
+    });
+
+    // 🔥 Si viene desde "Ver en mapa"
+    if (focusId && Number(focusId) === u.id) {
+      map.setView(u.coords, 17);
+      setTimeout(() => marker.openPopup(), 400);
+    }
+  });
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:system-ui, sans-serif;
+
+// 5️⃣ Buscador (seguro)
+const search = document.getElementById("search");
+const suggestions = document.getElementById("suggestions");
+
+if (search) {
+  search.addEventListener("input", e => {
+    const val = e.target.value.toLowerCase().trim();
+    suggestions.innerHTML = "";
+
+    if (!val) {
+      markers.forEach(m => map.addLayer(m.marker));
+      return;
+    }
+
+    const matches = markers.filter(m =>
+      m.nombre.includes(val)
+    );
+
+    // Mostrar solo coincidencias en el mapa
+    markers.forEach(m => {
+      matches.includes(m)
+        ? map.addLayer(m.marker)
+        : map.removeLayer(m.marker);
+    });
+
+    // Crear sugerencias
+    matches.slice(0, 5).forEach(m => {
+      const div = document.createElement("div");
+      div.className = "suggestion";
+      div.textContent = m.nombre;
+
+      div.addEventListener("click", () => {
+        map.setView(m.marker.getLatLng(), 16);
+        m.marker.openPopup();
+        search.value = m.nombre;
+        suggestions.innerHTML = "";
+      });
+
+      suggestions.appendChild(div);
+    });
+  });
 }
 
-body{
-  background:#fff;
-  color:#333;
-}
-
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 40px;
-  background:white;
-  position:sticky;
-  top:0;
-  z-index:2000;
-  box-shadow:0 4px 15px rgba(0,0,0,.08);
-}
-
-.logo{
-  font-weight:700;
-  color:var(--primary);
-  font-size:1.2rem;
-}
-
-.nav-links{
-  list-style:none;
-  display:flex;
-  gap:25px;
-}
-
-.nav-links a{
-  text-decoration:none;
-  color:#333;
-  font-weight:500;
-}
-
-.nav-links a:hover{
-  color:var(--primary);
-}
-
-main{
-  max-width:1200px;
-  margin:auto;
-  padding:60px 20px;
-}
-
-footer{
-  background:var(--dark);
-  color:white;
-  text-align:center;
-  padding:25px;
-  margin-top:60px;
-}
-
-.menu-toggle{
-  display:none;
-  font-size:1.8rem;
-  background:none;
-  border:none;
-  cursor:pointer;
-  color:var(--primary);
-}
-
-/* 📱 MÓVIL */
-@media (max-width: 768px){
-
-  .menu-toggle{
-    display:block;
+// Cerrar sugerencias al hacer click fuera
+document.addEventListener("click", e => {
+  if (!e.target.closest("#search")) {
+    suggestions.innerHTML = "";
   }
+});
 
-  .nav-links{
-    position:absolute;
-    top:65px;
-    right:0;
-    background:white;
-    width:100%;
-    flex-direction:column;
-    align-items:center;
-    gap:0;
-    box-shadow:0 10px 20px rgba(0,0,0,.1);
-    display:none;
-  }
+// 6️⃣ Filtro por tipo
+const tipo = document.getElementById("tipo");
+if(tipo){
+  tipo.addEventListener("change", () => {
+    const t = tipo.value;
 
-  .nav-links li{
-    width:100%;
-    text-align:center;
-    border-bottom:1px solid #eee;
-  }
-
-  .nav-links a{
-    display:block;
-    padding:15px;
-  }
-
-  .nav-links.active{
-    display:flex;
-  }
+    markers.forEach(m => {
+      (!t || m.tipo === t)
+        ? map.addLayer(m.marker)
+        : map.removeLayer(m.marker);
+    });
+  });
 }
 
-.hero{
-  background:linear-gradient(135deg,var(--primary),var(--secondary));
-  color:white;
-  padding:100px 20px;
-  text-align:center;
-}
-
-.hero-content{
-  max-width:700px;
-  margin:auto;
-}
-
-.hero h1{
-  font-size:3rem;
-  margin-bottom:20px;
-}
-
-.hero p{
-  font-size:1.2rem;
-  margin-bottom:30px;
-  line-height:1.6;
-}
-
-.btn-primary,
-.btn-secondary{
-  display:inline-block;
-  padding:12px 28px;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:600;
-}
-
-.btn-primary{
-  background:white;
-  color:var(--primary);
-}
-
-.btn-secondary{
-  border:2px solid var(--primary);
-  color:var(--primary);
-}
-
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
-}
-
-.card{
-  background:var(--light);
-  padding:25px;
-  border-radius:18px;
-  box-shadow:0 10px 20px rgba(0,0,0,.08);
-}
-
-.card h3{
-  margin-bottom:10px;
-  color:var(--primary);
-}
-
-@media (max-width:768px){
-  .hero h1{
-    font-size:2.2rem;
-  }
-
-  .hero p{
-    font-size:1rem;
-  }
-}
-
-#map{
-  width:100%;
-  height:450px;
-  border-radius:18px;
-  box-shadow:0 10px 20px rgba(0,0,0,.1);
-}
-
-@media (max-width:768px){
-  #map{
-    height: 60vh;
-    min-height: 300px;
-  }
-}
-
-.nav-links a{
-  position:relative;
-  padding:8px 4px;
-}
-
-.nav-links a.active{
-  color:var(--primary);
-  font-weight:600;
-}
-
-.nav-links a.active::before{
-  content:"";
-  position:absolute;
-  top:-10px;
-  left:0;
-  width:100%;
-  height:4px;
-  background:var(--primary);
-  border-radius:4px;
-}
-
-
-.leaflet-control,
-.leaflet-pane{
-  z-index:400;
-}
-
-
-@media (max-width:768px){
-  .nav-links a.active::before{
-    top:0;
-    height:100%;
-    opacity:.1;
-  }
-}
-
-/* 🔎 Buscador con sugerencias */
-
-#search {
-  width: 100%;
-  padding: 12px 16px;
-  border-radius: 14px;
-  border: 1px solid #ddd;
-  font-size: 1rem;
-  outline: none;
-}
-
-#search:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(13,110,253,.15);
-}
-
-/* Contenedor de sugerencias */
-#suggestions {
-  position: relative;
-  background: white;
-  border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0,0,0,.12);
-  overflow: hidden;
-  margin-top: 6px;
-  z-index: 1200; /* 🔥 sobre el mapa */
-}
-
-/* Cada sugerencia */
-.suggestion {
-  padding: 14px 18px;
-  cursor: pointer;
-  transition: background .2s;
-}
-
-.suggestion:hover {
-  background: #f0f4ff;
-}
-
-/* Texto de sugerencia */
-.suggestion::after {
-  content: "📍";
-  float: right;
-  opacity: .6;
-}
-
-/* Ocultar cuando esté vacío */
-#suggestions:empty {
-  display: none;
-}
-
-@media (max-width:768px){
-
-  #search,
-  select#tipo {
-    font-size: 1rem;
-    padding: 14px 16px;
-  }
-
-  #suggestions {
-    max-height: 180px;
-  }
-}
-
-@media (max-width:768px){
-  .navbar{
-    padding:12px 20px;
-  }
-}
-
-@media (max-width:768px){
-  .btn-primary{
-    width:100%;
-    text-align:center;
-    padding:14px;
-    font-size:1rem;
-  }
-}
+const params = new URLSearchParams(window.location.search);
+const focusLat = params.get("lat");
+const focusLng = params.get("lng");
+const focusId = params.get("id");
 

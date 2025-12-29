@@ -12,6 +12,20 @@
   font-family:system-ui, sans-serif;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espacio entre icono y texto */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo-icon {
+  width: 32px;   /* tamaño del icono */
+  height: 32px;
+  object-fit: contain;
+}
+
 body{
   background:#fff;
   color:#333;
@@ -459,4 +473,5 @@ body.fade-out {
 .page-transition.active {
   clip-path: circle(150% at center);
 }
+
 

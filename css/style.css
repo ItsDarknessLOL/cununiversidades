@@ -189,7 +189,8 @@ footer{
 
 @media (max-width:768px){
   #map{
-    height:350px;
+    height: 60vh;
+    min-height: 300px;
   }
 }
 
@@ -278,3 +279,104 @@ footer{
 #suggestions:empty {
   display: none;
 }
+
+@media (max-width:768px){
+
+  #search,
+  select#tipo {
+    font-size: 1rem;
+    padding: 14px 16px;
+  }
+
+  #suggestions {
+    max-height: 180px;
+  }
+}
+
+@media (max-width:768px){
+  .navbar{
+    padding:12px 20px;
+  }
+}
+
+@media (max-width:768px){
+  .btn-primary{
+    width:100%;
+    text-align:center;
+    padding:14px;
+    font-size:1rem;
+  }
+}
+
+/* 📚 Catálogo de universidades */
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.uni-card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.uni-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.uni-card-content {
+  padding: 18px;
+  flex: 1;
+}
+
+.uni-card h4 {
+  margin-bottom: 6px;
+  color: var(--primary);
+}
+
+.uni-card p {
+  font-size: .9rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.uni-card .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.uni-card .actions a {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.uni-card .mapa {
+  background: var(--primary);
+  color: white;
+}
+
+.uni-card .llegar {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+/* 📱 móvil */
+@media (max-width:768px){
+  .uni-card img {
+    height: 140px;
+  }
+}
+

@@ -256,6 +256,9 @@ footer{
   overflow: hidden;
   margin-top: 6px;
   z-index: 1200; /* 🔥 sobre el mapa */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Cada sugerencia */
@@ -273,7 +276,8 @@ footer{
 .suggestion::after {
   content: "📍";
   float: right;
-  opacity: .6;
+  opacity: .4;
+  font-size: 1.2rem;
 }
 
 /* Ocultar cuando esté vacío */
@@ -403,6 +407,56 @@ html {
   scroll-behavior: smooth;
 }
 
+button,
+a.btn-primary,
+a.btn-secondary,
+.uni-card .actions a {
+  position: relative;
+  overflow: hidden;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
 
+button:hover,
+a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
 
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,.4);
+  transform: scale(0);
+  animation: ripple 0.7s ease-out;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+body {
+  opacity: 1;
+  transition: opacity .4s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+.page-transition {
+  position: fixed;
+  inset: 0;
+  background: var(--primary);
+  clip-path: circle(0% at center);
+  transition: clip-path .6s ease-in-out;
+  z-index: 9999;
+}
+
+.page-transition.active {
+  clip-path: circle(150% at center);
+}
 

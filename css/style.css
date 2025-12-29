@@ -267,9 +267,6 @@ footer{
   overflow: hidden;
   margin-top: 6px;
   z-index: 1200; /* 🔥 sobre el mapa */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 /* Cada sugerencia */
@@ -287,8 +284,7 @@ footer{
 .suggestion::after {
   content: "📍";
   float: right;
-  opacity: .4;
-  font-size: 1.2rem;
+  opacity: .6;
 }
 
 /* Ocultar cuando esté vacío */
@@ -417,5 +413,6 @@ footer{
 html {
   scroll-behavior: smooth;
 }
+
 
 

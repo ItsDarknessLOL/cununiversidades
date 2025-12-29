@@ -5,6 +5,15 @@
   <title>Universidades de Cancún</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css"
+  />
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css"
+  />
+
   <!-- CSS GLOBAL -->
   <link rel="stylesheet" href="css/style.css">
 
@@ -59,16 +68,20 @@
 
     <!-- MAPA (SOLO UNO) -->
     <div id="map"></div>
-    
+
     <h3 style="margin-top:50px">Universidades</h3>
+
     <div id="catalogo" class="catalogo"></div>
-    
+
   </section>
 </main>
 
 <footer>
   <p>Universidades de Cancún © 2025</p>
 </footer>
+
+<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+
 
 <!-- LEAFLET JS -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
@@ -81,4 +94,3 @@
 
 </body>
 </html>
-

@@ -37,17 +37,33 @@ function render(u) {
 
   // IMÁGENES
   const cont = document.getElementById("imagenes");
-  cont.innerHTML = "";
+  cont.innerHTML = ""; // Limpiamos el contenedor
 
-  if (Array.isArray(u.imagenes)) {
+  if (Array.isArray(u.imagenes) && u.imagenes.length > 0) {
     u.imagenes.forEach(img => {
       const i = document.createElement("img");
-      i.src = `../img/universidades/${u.id}/${img}`;
+      
+      // ✅ CORRECCIÓN DE RUTA: 
+      // Si todas las imágenes están en img/catalogo/, eliminamos la subcarpeta del ID.
+      i.src = `../img/catalogo/${img}`; 
+      
       i.style.width = "100%";
+      i.style.maxHeight = "400px"; // Opcional: para que no sean gigantes
+      i.style.objectFit = "cover";   // Opcional: para que mantengan proporción
       i.style.borderRadius = "12px";
       i.style.marginBottom = "15px";
+      i.style.display = "block";
+
+      // Manejo de error por si la imagen no existe
+      i.onerror = function() {
+        this.src = '../img/catalogo/placeholder.jpg'; 
+      };
+
       cont.appendChild(i);
     });
+  } else {
+    // Si no hay imágenes en el JSON, mostrar un placeholder
+    cont.innerHTML = `<img src="../img/catalogo/placeholder.jpg" style="width:100%; border-radius:12px;">`;
   }
 
   const btnMapa = document.getElementById("ver-mapa");

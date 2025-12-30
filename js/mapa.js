@@ -30,8 +30,8 @@ if ("geolocation" in navigator) {
  * 📦 Variables globales
  *************************/
 let universidades = [];
-let markersData = [];        // para buscador y filtros
-let individualMarkers = [];  // solo Leaflet markers
+let markersData = [];
+let individualMarkers = [];
 
 const cluster = L.markerClusterGroup({
   disableClusteringAtZoom: 14,
@@ -188,28 +188,27 @@ if (tipoSelect) {
 }
 
 /*************************
- * 📚 Tarjetas catálogo
+ * 📚 Tarjetas catálogo (IMÁGENES CORREGIDAS)
  *************************/
 function crearCard(u) {
   const card = document.createElement("div");
   card.className = "uni-card";
 
-  // 🖼️ Imagen desde JSON
- let img = "placeholder.jpg";
+  // 🖼️ Resolver imagen correctamente
+  let img = "placeholder.jpg";
 
-if (Array.isArray(u.imagenes) && u.imagenes.length > 0) {
-  img = u.imagenes[0];
-} 
-else if (typeof u.imagenes === "string") {
-  img = u.imagenes;
-}
+  if (Array.isArray(u.imagenes) && u.imagenes.length > 0) {
+    img = u.imagenes[0];
+  } else if (typeof u.imagenes === "string") {
+    img = u.imagenes;
+  }
 
   card.innerHTML = `
     <img 
-     src="img/catalogo/${img}" 
+      src="img/catalogo/${img}"
+      alt="${u.nombre}"
       onerror="this.src='img/catalogo/placeholder.jpg'"
     >
-
 
     <div class="uni-card-content">
       <h4>${u.nombre}</h4>

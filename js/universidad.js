@@ -46,6 +46,7 @@ function render(u) {
       // ✅ CORRECCIÓN DE RUTA: 
       // Si todas las imágenes están en img/catalogo/, eliminamos la subcarpeta del ID.
       i.src = `../img/catalogo/${img}`; 
+      i.loading="lazy"
       
       i.style.width = "100%";
       i.style.maxHeight = "400px"; // Opcional: para que no sean gigantes
@@ -74,3 +75,4 @@ function render(u) {
   }
 
 }
+

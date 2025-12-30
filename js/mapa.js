@@ -194,7 +194,7 @@ function crearCard(u) {
   const card = document.createElement("div");
   card.className = "uni-card";
 
-  // 🖼️ Resolver imagen correctamente
+  // 🖼️ Imagen desde JSON
   let img = "placeholder.jpg";
 
   if (Array.isArray(u.imagenes) && u.imagenes.length > 0) {
@@ -203,13 +203,14 @@ function crearCard(u) {
     img = u.imagenes;
   }
 
+  // ✅ Normalizar ruta: si ya tiene 'img/catalogo/' no lo agregamos otra vez
+  const imgPath = img.startsWith("img/catalogo/") ? img : `img/catalogo/${img}`;
+
   card.innerHTML = `
     <img 
-      src="img/catalogo/${img}"
-      alt="${u.nombre}"
+      src="${imgPath}" 
       onerror="this.src='img/catalogo/placeholder.jpg'"
     >
-
     <div class="uni-card-content">
       <h4>${u.nombre}</h4>
       <p>${u.direccion || "Cancún, Q. Roo"}</p>
@@ -230,3 +231,4 @@ function crearCard(u) {
 
   catalogo.appendChild(card);
 }
+

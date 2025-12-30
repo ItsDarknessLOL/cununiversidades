@@ -194,41 +194,39 @@ function crearCard(u) {
   const card = document.createElement("div");
   card.className = "uni-card";
 
-  // 🖼️ Imagen desde JSON
-  let img = "placeholder.jpg";
+  // 🖼️ Extraer imagen desde el JSON
+  // Si 'imagenes' es un arreglo y tiene elementos, usamos el primero.
+  // De lo contrario, usamos una imagen de respaldo (placeholder).
+  let imgName = "placeholder.jpg"; 
 
   if (Array.isArray(u.imagenes) && u.imagenes.length > 0) {
-    img = u.imagenes[0];
+    imgName = u.imagenes[0];
   } else if (typeof u.imagenes === "string") {
-    img = u.imagenes;
+    imgName = u.imagenes;
   }
 
-  // ✅ Normalizar ruta: si ya tiene 'img/catalogo/' no lo agregamos otra vez
-  const imgPath = img.startsWith("img/catalogo/") ? img : `img/catalogo/${img}`;
+  // Construimos la ruta completa usando img/catalogo/
+  const rutaImagen = `img/catalogo/${imgName}`;
 
   card.innerHTML = `
     <img 
-      src="${imgPath}" 
+      src="${rutaImagen}" 
+      alt="${u.nombre}"
       onerror="this.src='img/catalogo/placeholder.jpg'"
     >
     <div class="uni-card-content">
       <h4>${u.nombre}</h4>
-      <p>${u.direccion || "Cancún, Q. Roo"}</p>
-
-      <div class="actions">
-        <a class="mapa" href="mapa.html?id=${u.id}">
-          Ver mapa
-        </a>
-
-        <a class="llegar"
-           target="_blank"
-           href="https://www.google.com/maps/dir/?api=1&destination=${u.coords[0]},${u.coords[1]}">
-          Cómo llegar
-        </a>
-      </div>
+      <p>${u.direccion || 'Cancún, Q. Roo'}</p>
+      <a href="universidades/universidad.html?id=${u.id}" class="btn-card">
+        Más detalles
+      </a>
     </div>
   `;
 
   catalogo.appendChild(card);
 }
+
+  catalogo.appendChild(card);
+}
+
 

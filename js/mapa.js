@@ -194,25 +194,23 @@ function crearCard(u) {
   const card = document.createElement("div");
   card.className = "uni-card";
 
-  // 🖼️ Extraer imagen desde el JSON
-  // Si 'imagenes' es un arreglo y tiene elementos, usamos el primero.
-  // De lo contrario, usamos una imagen de respaldo (placeholder).
-  let imgName = "placeholder.jpg"; 
+  // 🖼️ Imagen desde JSON
+ let img = "placeholder.jpg";
 
-  if (Array.isArray(u.imagenes) && u.imagenes.length > 0) {
-    imgName = u.imagenes[0];
-  } else if (typeof u.imagenes === "string") {
-    imgName = u.imagenes;
-  }
-
-  // Construimos la ruta completa usando img/catalogo/
-  const rutaImagen = `img/catalogo/${imgName}`;
+if (Array.isArray(u.imagenes) && u.imagenes.length > 0) {
+  img = u.imagenes[0];
+} 
+else if (typeof u.imagenes === "string") {
+  img = u.imagenes;
+}
 
   card.innerHTML = `
     <img 
-      src="${rutaImagen}" 
-      alt="${u.nombre}"
+     src="img/catalogo/${img}" 
       onerror="this.src='img/catalogo/placeholder.jpg'"
+    >
+
+
     <div class="uni-card-content">
       <h4>${u.nombre}</h4>
       <p>${u.direccion || "Cancún, Q. Roo"}</p>

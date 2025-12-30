@@ -213,13 +213,21 @@ function crearCard(u) {
       src="${rutaImagen}" 
       alt="${u.nombre}"
       onerror="this.src='img/catalogo/placeholder.jpg'"
-    >
     <div class="uni-card-content">
       <h4>${u.nombre}</h4>
-      <p>${u.direccion || 'Cancún, Q. Roo'}</p>
-      <a href="universidades/universidad.html?id=${u.id}" class="btn-card">
-        Más detalles
-      </a>
+      <p>${u.direccion || "Cancún, Q. Roo"}</p>
+
+      <div class="actions">
+        <a class="mapa" href="mapa.html?id=${u.id}">
+          Ver mapa
+        </a>
+
+        <a class="llegar"
+           target="_blank"
+           href="https://www.google.com/maps/dir/?api=1&destination=${u.coords[0]},${u.coords[1]}">
+          Cómo llegar
+        </a>
+      </div>
     </div>
   `;
 

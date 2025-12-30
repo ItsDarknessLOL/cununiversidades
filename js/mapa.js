@@ -195,16 +195,21 @@ function crearCard(u) {
   card.className = "uni-card";
 
   // 🖼️ Imagen desde JSON
-  let img = "placeholder.jpg";
-  if (Array.isArray(u.imagenes) && u.imagenes.length > 0) {
-    img = u.imagenes[0];
-  }
+ let img = "placeholder.jpg";
+
+if (Array.isArray(u.imagenes) && u.imagenes.length > 0) {
+  img = u.imagenes[0];
+} 
+else if (typeof u.imagenes === "string") {
+  img = u.imagenes;
+}
 
   card.innerHTML = `
     <img 
-      src="img/catalogo/${img}" 
+     src="img/catalogo/${img}" 
       onerror="this.src='img/catalogo/placeholder.jpg'"
     >
+
 
     <div class="uni-card-content">
       <h4>${u.nombre}</h4>

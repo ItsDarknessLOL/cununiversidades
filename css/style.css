@@ -743,3 +743,7 @@ body.fade-out {
     transform: translateY(0);
   }
 }
+
+.sectional {
+  text-align: center;
+}

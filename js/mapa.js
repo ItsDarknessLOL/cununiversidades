@@ -194,17 +194,24 @@ function crearCard(u) {
   const card = document.createElement("div");
   card.className = "uni-card";
 
+  // 🖼️ Imagen desde JSON
+  let img = "placeholder.jpg";
+  if (Array.isArray(u.imagenes) && u.imagenes.length > 0) {
+    img = u.imagenes[0];
+  }
+
   card.innerHTML = `
-    <img src="img/universidades/${u.id}/1.jpg"
-         onerror="this.src='img/placeholder.jpg'">
+    <img 
+      src="img/catalogo/${img}" 
+      onerror="this.src='img/catalogo/placeholder.jpg'"
+    >
 
     <div class="uni-card-content">
       <h4>${u.nombre}</h4>
       <p>${u.direccion || "Cancún, Q. Roo"}</p>
 
       <div class="actions">
-        <a class="mapa"
-           href="mapa.html?id=${u.id}">
+        <a class="mapa" href="mapa.html?id=${u.id}">
           Ver mapa
         </a>
 

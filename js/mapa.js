@@ -203,6 +203,7 @@ function crearCard(u) {
   card.innerHTML = `
     <img 
       src="img/catalogo/${img}" 
+      loading:"lazy"
       onerror="this.src='img/catalogo/placeholder.jpg'"
     >
 
@@ -226,3 +227,4 @@ function crearCard(u) {
 
   catalogo.appendChild(card);
 }
+

@@ -225,8 +225,3 @@ function crearCard(u) {
 
   catalogo.appendChild(card);
 }
-
-  catalogo.appendChild(card);
-}
-
-

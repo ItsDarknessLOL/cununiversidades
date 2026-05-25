@@ -21,7 +21,7 @@
       -86.82904
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "periodismo.png"
    ]
   },
   {
@@ -46,7 +46,7 @@
       -86.84162
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "oriente.png"
    ]
   },
   {
@@ -71,7 +71,7 @@
       -86.82224
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "IHPG.png"
    ]
   },
   {
@@ -96,7 +96,7 @@
       -86.822383
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "UNIVIR.jpg"
    ]
   },
   {
@@ -121,7 +121,7 @@
       -86.82266
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "ieu.png"
    ]
   },
   {
@@ -139,14 +139,14 @@
     "Nombredelocalidad": "CANCÚN",
     "telefono": "",
     "web": "",
-    "facebook": "",
+    "facebook": "http://facebook.com/universidadlidermex",
     "direccion": "AVENIDA CHICHÉN ITZÁ, CALLE TIMUL, CALLE NOH CACAB, CALLE TIZUMUL, 63, 77515",
     "coords": [
       21.158419,
       -86.852762
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "lidermex.png"
    ]
   },
   {
@@ -171,7 +171,7 @@
       -86.85177
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "aztlan.png"
    ]
   },
   {
@@ -221,7 +221,7 @@
       -86.835378
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "ipj.jpg"
    ]
   },
   {
@@ -246,7 +246,7 @@
       -86.84845
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "itc.jpg"
    ]
   },
   {
@@ -296,7 +296,7 @@
       -86.844488
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "uiimex.png"
    ]
   },
   {
@@ -371,7 +371,7 @@
       -86.843876
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "henbord.png"
    ]
   },
   {
@@ -421,7 +421,7 @@
       -86.86334
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "upsum.png"
    ]
   },
   {
@@ -446,7 +446,7 @@
       -86.82266
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "esl.png"
    ]
   },
   {
@@ -464,14 +464,14 @@
     "Nombredelocalidad": "CANCÚN",
     "telefono": "",
     "web": "",
-    "facebook": "",
+    "facebook": "https://www.facebook.com/UNECTmx/",
     "direccion": "CALLE FRESNO, AVENIDA HUAYACAN, CALLE LIMON, CALLE ENCINO, 295, 77560",
     "coords": [
       21.12794,
       -86.838321
     ],
    "imagenes": [
-     "placeholder.jpg"
+     "unect.jpg"
    ]
   },
   {

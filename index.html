@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>Universidades Cancún — Encuentra tu camino</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nuevo.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="img/cuniversidadeslogo.png" alt="Logo" class="nav-logo-img">
+      <span>Universidades<br><em>Cancún</em></span>
+    </a>
+    <button class="nav-burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="informacion.html">Información</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="acerca.html">Acerca de</a></li>
+      <li><a href="mapa.html" class="nav-cta">Explorar mapa →</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-bg-img" style="background-image:url('img/fondomapa.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grid-lines"></div>
+  </div>
+  <div class="hero-body">
+    <div class="hero-label">Quintana Roo · México · 2025</div>
+    <h1 class="hero-title">
+      <span class="hero-title-line">El mapa de</span>
+      <span class="hero-title-line hero-accent">tu futuro</span>
+      <span class="hero-title-line">empieza aquí.</span>
+    </h1>
+    <p class="hero-sub">65 instituciones de educación superior en Cancún, exploradas desde un solo lugar.</p>
+    <div class="hero-actions">
+      <a href="mapa.html" class="btn-primary">Ver mapa interactivo</a>
+      <a href="informacion.html" class="btn-ghost">¿Cómo funciona?</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="hero-stat-num" data-target="65">0</span><span class="hero-stat-label">Universidades</span></div>
+      <div class="hero-stat-sep"></div>
+      <div class="hero-stat"><span class="hero-stat-num" data-target="9">0</span><span class="hero-stat-label">Públicas</span></div>
+      <div class="hero-stat-sep"></div>
+      <div class="hero-stat"><span class="hero-stat-num" data-target="56">0</span><span class="hero-stat-label">Privadas</span></div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- FEATURES STRIP -->
+<section class="strip">
+  <div class="strip-inner">
+    <div class="strip-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 1 8 8c0 5.5-8 12-8 12S4 15.5 4 10a8 8 0 0 1 8-8z"/></svg>
+      <span>Ubicaciones reales en mapa</span>
+    </div>
+    <div class="strip-dot"></div>
+    <div class="strip-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <span>Búsqueda con sugerencias</span>
+    </div>
+    <div class="strip-dot"></div>
+    <div class="strip-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      <span>Catálogo completo</span>
+    </div>
+    <div class="strip-dot"></div>
+    <div class="strip-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      <span>Tecnología SIG</span>
+    </div>
+  </div>
+</section>
+
+<!-- TOP UNIVERSIDADES — MARQUEE CAROUSEL -->
+<section class="destac">
+  <div class="destac-header">
+    <div class="destac-tag">Top 10 destacadas</div>
+    <h2 class="destac-title">Las mejores universidades<br>en Cancún</h2>
+    <p class="destac-sub">Catalogadas según datos del 2025</p>
+  </div>
+
+  <div class="marquee-wrap">
+    <div class="marquee-track" id="marqueeTrack">
+
+      <div class="ucard">
+        <div class="ucard-img" style="background-image:url('img/inicio/unicaribe.jpg')">
+          <div class="ucard-badge public">Pública</div>
+        </div>
+        <div class="ucard-body">
+          <h3 class="ucard-name">Universidad del Caribe</h3>
+          <p class="ucard-areas">Turismo · Administración · TI · Idiomas</p>
+          <a href="mapa.html?id=32" class="ucard-link">Ver en mapa →</a>
+        </div>
+      </div>
+
+      <div class="ucard">
+        <div class="ucard-img" style="background-image:url('img/inicio/ut.jpg')">
+          <div class="ucard-badge public">Pública</div>
+        </div>
+        <div class="ucard-body">
+          <h3 class="ucard-name">UT Cancún</h3>
+          <p class="ucard-areas">Turismo · Gastronomía · TI</p>
+          <a href="mapa.html?id=16" class="ucard-link">Ver en mapa →</a>
+        </div>
+      </div>
+
+      <div class="ucard">
+        <div class="ucard-img" style="background-image:url('img/inicio/it.jpg')">
+          <div class="ucard-badge public">Pública</div>
+        </div>
+        <div class="ucard-body">
+          <h3 class="ucard-name">Instituto Tecnológico de Cancún</h3>
+          <p class="ucard-areas">Ingenierías · Administración · Ciencias</p>
+          <a href="mapa.html?id=11" class="ucard-link">Ver en mapa →</a>
+        </div>
+      </div>
+
+      <div class="ucard">
+        <div class="ucard-img" style="background-image:url('img/inicio/anahuac.jpg')">
+          <div class="ucard-badge private">Privada</div>
+        </div>
+        <div class="ucard-body">
+          <h3 class="ucard-name">Universidad Anáhuac</h3>
+          <p class="ucard-areas">Sustentable · Educación · Administración</p>
+          <a href="mapa.html?id=42" class="ucard-link">Ver en mapa →</a>
+        </div>
+      </div>
+
+      <div class="ucard">
+        <div class="ucard-img" style="background-image:url('img/inicio/upn.jpg')">
+          <div class="ucard-badge public">Pública</div>
+        </div>
+        <div class="ucard-body">
+          <h3 class="ucard-name">UPN Cancún</h3>
+          <p class="ucard-areas">Educación · Pedagogía · Psicología</p>
+          <a href="mapa.html?id=13" class="ucard-link">Ver en mapa →</a>
+        </div>
+      </div>
+
+      <div class="ucard">
+        <div class="ucard-img" style="background-image:url('img/inicio/upqroo.jpg')">
+          <div class="ucard-badge public">Pública</div>
+        </div>
+        <div class="ucard-body">
+          <h3 class="ucard-name">UP Quintana Roo</h3>
+          <p class="ucard-areas">Ingeniería · Administración · TI</p>
+          <a href="mapa.html?id=29" class="ucard-link">Ver en mapa →</a>
+        </div>
+      </div>
+
+      <div class="ucard">
+        <div class="ucard-img" style="background-image:url('img/inicio/autonoma.jpg')">
+          <div class="ucard-badge public">Pública</div>
+        </div>
+        <div class="ucard-body">
+          <h3 class="ucard-name">UQROO Campus Cancún</h3>
+          <p class="ucard-areas">Ciencias Sociales · Derecho · Administración</p>
+          <a href="mapa.html?id=34" class="ucard-link">Ver en mapa →</a>
+        </div>
+      </div>
+
+      <div class="ucard">
+        <div class="ucard-img" style="background-image:url('img/inicio/la salle.jpg')">
+          <div class="ucard-badge private">Privada</div>
+        </div>
+        <div class="ucard-body">
+          <h3 class="ucard-name">Universidad La Salle</h3>
+          <p class="ucard-areas">Capacitación técnica diversa</p>
+          <a href="mapa.html?id=14" class="ucard-link">Ver en mapa →</a>
+        </div>
+      </div>
+
+      <div class="ucard">
+        <div class="ucard-img" style="background-image:url('img/inicio/unid.jpeg')">
+          <div class="ucard-badge private">Privada</div>
+        </div>
+        <div class="ucard-body">
+          <h3 class="ucard-name">UNID</h3>
+          <p class="ucard-areas">Turismo · TI · Administración</p>
+          <a href="mapa.html?id=8" class="ucard-link">Ver en mapa →</a>
+        </div>
+      </div>
+
+      <div class="ucard">
+        <div class="ucard-img" style="background-image:url('img/inicio/tec.jpg')">
+          <div class="ucard-badge private">Privada</div>
+        </div>
+        <div class="ucard-body">
+          <h3 class="ucard-name">Tec Milenio Cancún</h3>
+          <p class="ucard-areas">Áreas técnicas y oficios</p>
+          <a href="mapa.html?id=56" class="ucard-link">Ver en mapa →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="destac-footer">
+    <a href="informacion.html" class="btn-outline">Ver catálogo completo →</a>
+  </div>
+</section>
+
+<!-- QUÉ ENCONTRARÁS -->
+<section class="features">
+  <div class="features-inner">
+    <div class="features-text">
+      <div class="features-tag">¿Qué encontrarás aquí?</div>
+      <h2 class="features-title">Todo lo que necesitas para elegir tu universidad</h2>
+      <p class="features-desc">Accede a información real, ubicaciones precisas y datos actualizados sin tener que visitar decenas de sitios web.</p>
+      <a href="mapa.html" class="btn-primary">Empezar ahora →</a>
+    </div>
+    <div class="features-grid">
+      <div class="feat-card feat-card--teal">
+        <div class="feat-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 1 8 8c0 5.5-8 12-8 12S4 15.5 4 10a8 8 0 0 1 8-8z"/></svg>
+        </div>
+        <h3>Mapa interactivo</h3>
+        <p>Visualiza todas las universidades sobre el mapa real de Cancún.</p>
+      </div>
+      <div class="feat-card feat-card--coral">
+        <div class="feat-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>Información centralizada</h3>
+        <p>Contacto, web, Facebook y dirección en un solo lugar.</p>
+      </div>
+      <div class="feat-card feat-card--sand">
+        <div class="feat-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </div>
+        <h3>Exploración sencilla</h3>
+        <p>Busca por nombre o tipo con sugerencias en tiempo real.</p>
+      </div>
+      <div class="feat-card feat-card--dark">
+        <div class="feat-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Tecnología SIG</h3>
+        <p>Sistemas de Información Geográfica para explorar el espacio urbano.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIG EXPLAINER -->
+<section class="sig-section">
+  <div class="sig-inner">
+    <div class="sig-img-col">
+      <div class="sig-img-frame">
+        <img src="img/layersig.png" alt="Capas SIG" class="sig-img">
+        <div class="sig-img-glow"></div>
+      </div>
+    </div>
+    <div class="sig-content">
+      <div class="sig-tag">¿Qué es un SIG?</div>
+      <h2 class="sig-title">Sistema de Información Geográfica</h2>
+      <p class="sig-desc">Un SIG es un marco para recopilar, gestionar y analizar datos con base en su ubicación espacial. Integra capas de información en visualizaciones de mapas, revelando patrones y relaciones que ayudan a tomar mejores decisiones.</p>
+
+      <div class="sig-feats">
+        <div class="sig-feat">
+          <div class="sig-feat-dot"></div>
+          <div>
+            <strong>Administración de datos</strong>
+            <p>Almacena e integra información de múltiples fuentes georreferenciadas.</p>
+          </div>
+        </div>
+        <div class="sig-feat">
+          <div class="sig-feat-dot"></div>
+          <div>
+            <strong>Representación cartográfica</strong>
+            <p>Desde mapas digitales hasta imágenes satelitales en tiempo real.</p>
+          </div>
+        </div>
+        <div class="sig-feat">
+          <div class="sig-feat-dot"></div>
+          <div>
+            <strong>Análisis espacial</strong>
+            <p>Descubre relaciones ocultas entre ubicaciones y datos.</p>
+          </div>
+        </div>
+        <div class="sig-feat">
+          <div class="sig-feat-dot"></div>
+          <div>
+            <strong>Comunicación visual</strong>
+            <p>Mapas y cuadros comunican ideas complejas con rapidez.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <p class="cta-eyebrow">Listo para explorar</p>
+    <h2 class="cta-title">Encuentra la universidad<br>que mejor se adapte a ti.</h2>
+    <a href="mapa.html" class="btn-cta">Abrir mapa interactivo →</a>
+  </div>
+  <div class="cta-deco">
+    <div class="cta-deco-circle c1"></div>
+    <div class="cta-deco-circle c2"></div>
+    <div class="cta-deco-circle c3"></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="img/cuniversidadeslogo.png" alt="Logo" class="footer-logo">
+      <span>Universidades Cancún</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Inicio</a>
+      <a href="mapa.html">Mapa</a>
+      <a href="informacion.html">Información</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="acerca.html">Acerca de</a>
+    </nav>
+    <p class="footer-copy">Universidades de Cancún © 2025 · Proyecto académico CETMAR 41 · Antonio Chan Uitzil & Rubén Alexander Maldonado Calvo</p>
+  </div>
+</footer>
+
+<script>
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+const nav = document.getElementById('mainNav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+const track = document.getElementById('marqueeTrack');
+track.innerHTML += track.innerHTML;
+let x = 0;
+const speed = 0.6;
+function tick() {
+  x -= speed;
+  const half = track.scrollWidth / 2;
+  if (Math.abs(x) >= half) x = 0;
+  track.style.transform = `translateX(${x}px)`;
+  requestAnimationFrame(tick);
+}
+track.addEventListener('mouseenter', () => speed && (track._paused = true));
+track.addEventListener('mouseleave', () => (track._paused = false));
+
+let spd = speed;
+function tickPaused() {
+  if (!track._paused) {
+    x -= spd;
+    const half = track.scrollWidth / 2;
+    if (Math.abs(x) >= half) x = 0;
+    track.style.transform = `translateX(${x}px)`;
+  }
+  requestAnimationFrame(tickPaused);
+}
+requestAnimationFrame(tickPaused);
+
+function animateCount(el) {
+  const target = +el.dataset.target;
+  const dur = 1400;
+  const start = performance.now();
+  function frame(now) {
+    const p = Math.min((now - start) / dur, 1);
+    el.textContent = Math.round(p * target);
+    if (p < 1) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { animateCount(e.target); observer.unobserve(e.target); } });
+}, { threshold: 0.5 });
+document.querySelectorAll('.hero-stat-num').forEach(el => observer.observe(el));
+
+const fadeEls = document.querySelectorAll('.feat-card, .sig-feat, .ucard');
+const fader = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+fadeEls.forEach(el => fader.observe(el));
+</script>
+</body>
+</html>
